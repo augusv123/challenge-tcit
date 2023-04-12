@@ -1,0 +1,26 @@
+
+
+<div class="modal" *ngIf="show">
+  <div class="modal-content">
+    <div class="row mb-3">
+      <div class="col-12 d-flex justify-content-between align-items-center">
+        <h6 class="mb-0">Add new Post!</h6>
+        <button class="btn" type="button" (click)="toggleShow()">
+          <i class="fa fa-circle-xmark"></i>
+        </button>
+      </div>
+    </div>
+    <div class="input-group mb-3">
+      <input type="text" [(ngModel)]="name" class="form-control" placeholder="Post name" aria-label="PostName">
+
+    </div>
+    <div class="input-group mb-3">
+      <input type="textarea" [(ngModel)]="description" class="form-control" placeholder="Description" aria-label="Description">
+
+    </div>
+
+    <button class="btn btn-primary" (click)="addPost()">Add Post</button>
+
+
+  </div>
+</div>

@@ -1,0 +1,16 @@
+<div class="container">
+  <header class="d-flex justify-content-center py-3">
+    <ul class="nav nav-pills">
+      <li class="nav-item"><button href="#" (click)="loadData()" class="nav-link" aria-current="page">Get All Posts</button></li>
+      <li class="nav-item"><button href="#" (click)="modal.toggleShow()" class="nav-link">Add Post</button></li>
+    </ul>
+  </header>
+  <div class="row justify-content-center">
+    <div class="col-6">
+        <app-post></app-post>
+    </div>
+  </div>
+</div>
+
+<!-- Modals -->
+<app-modal-add-post #modal></app-modal-add-post>
